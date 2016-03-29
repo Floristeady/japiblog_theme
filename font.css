@@ -1,0 +1,52 @@
+/***** Font Face *****/
+
+@font-face {
+    font-family: 'AGBQ';
+    src: url('font/akzidenzgrotesk-cond-webfont.eot');
+    src: url('font/akzidenzgrotesk-cond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/akzidenzgrotesk-cond-webfont.woff') format('woff'),
+         url('font/akzidenzgrotesk-cond-webfont.ttf') format('truetype'),
+         url('font/akzidenzgrotesk-cond-webfont.svg#AkzidenzGroteskBQCondensedRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AGLC';
+    src: url('font/akzidenzgrotesk-lightcond-webfont.eot');
+    src: url('font/akzidenzgrotesk-lightcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/akzidenzgrotesk-lightcond-webfont.woff') format('woff'),
+         url('font/akzidenzgrotesk-lightcond-webfont.ttf') format('truetype'),
+         url('font/akzidenzgrotesk-lightcond-webfont.svg#AkzidenzGroteskBQLightCondeRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GlosaItalic';
+    src: url('font/glosadisplay-medium_italic-webfont.eot');
+    src: url('font/glosadisplay-medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/glosadisplay-medium_italic-webfont.woff') format('woff'),
+         url('font/glosadisplay-medium_italic-webfont.ttf') format('truetype'),
+         url('font/glosadisplay-medium_italic-webfont.svg#GlosaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+@font-face {
+    font-family: 'AGLCI';
+    src: url('font/akzidenzgrotesk-lightconditalic-webfont.eot');
+    src: url('font/akzidenzgrotesk-lightconditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/akzidenzgrotesk-lightconditalic-webfont.woff') format('woff'),
+         url('font/akzidenzgrotesk-lightconditalic-webfont.ttf') format('truetype'),
+         url('font/akzidenzgrotesk-lightconditalic-webfont.svg#AkzidenzGroteskBQLightCondeIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
