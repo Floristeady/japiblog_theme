@@ -38,7 +38,7 @@
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <script src="<?php bloginfo('template_url'); ?>/js/modernizr-2.8.3.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/font.css" media="screen" />
 	
@@ -57,24 +57,36 @@
 	<header id="header">
 		
 		<div id="top">
+			
 			<div class="content-center">
+				
+				<nav id="menu-mobile" class="show-for-small-only">
+                 	<a class="open" href="javascript:void(0)">MENÚ</a>
+                 	
+                  	<?php  wp_nav_menu( array( 'container_id' => 'menu-third', 'theme_location' => 'third', 'sort_column' => 'menu_order' ) ); ?>
+                  	
+              	</nav>
+				
+				<div id="search-container" class="search-header search-box-wrapper">
+					<?php get_search_form(); ?>
+				</div>
+				
+				<nav id="nav-2">
+				 <?php  wp_nav_menu( array( 'container_id' => 'menu-secondary', 'theme_location' => 'secondary', 'sort_column' => 'menu_order' ) ); ?>
+				</nav>
+				
 				<ul id="social">
 	                <li class="face"><a target="_blank" href="http://facebook.com/japijane">Facebook</a></li>
 	                <li class="tw"><a target="_blank" href="http://twitter.com/japijane">Twitter</a></li>
 	                <li class="ins"><a target="_blank" href="http://instagram.com/japijane">Instagram</a></li>
-	                <li class="yt"><a target="_blank" href="http://www.youtube.com/user/japijane/videos">Youtube</a></li>
+	                <li class="youtube"><a target="_blank" href="http://www.youtube.com/user/japijane/videos">Youtube</a></li>
 	             </ul>
-				<nav id="nav-2">
-				 <?php  wp_nav_menu( array( 'container_id' => 'menu-secondary', 'theme_location' => 'secondary', 'sort_column' => 'menu_order' ) ); ?>
-				</nav>
 			</div>
 		</div>
 		
 		<div class="content-center">
 			
-			<a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_japiblog.png" alt="JapiJane Blog" /></a>
-			
-			<a class="open" href="javascript:void(0)"><span></span>MENU</a>
+			<a id="logo" href="http://www.japijane.cl/"><img width="240" src="<?php bloginfo('template_url'); ?>/img/logojapijane.svg" alt="JapiJane Blog" /></a>
 			
 			<nav id="access" role="navigation" class="clearfix">
 				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'japiblog' ); ?></a>

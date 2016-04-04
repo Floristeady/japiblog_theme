@@ -18,6 +18,7 @@ function japiblog_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Navegación Principal', 'japiblog' ),
 		'secondary' => __( 'Navegación Secundaria', 'japiblog' ),
+		'third' => __( 'Navegación Móvil', 'japiblog' ),
 	) );
 		
 	// Enable support for Post Thumbnails, and declare two sizes.

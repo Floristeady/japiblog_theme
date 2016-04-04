@@ -33,13 +33,13 @@ jQuery(document).ready(function($){
 	*/
 	$('.open')
       .bind('click focus', function(){
-        $('#access').slideToggle();
+        $('#menu-third').slideToggle();
         $('.open').toggleClass('active');
     }); 
    
    $('.close')
       .bind('click focus', function(){
-        $('#access').slideToggle();
+        $('#menu-third').slideToggle();
         $('.open').toggleClass('active');
     }); 
  
